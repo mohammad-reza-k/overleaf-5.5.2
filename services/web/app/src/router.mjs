@@ -1,4 +1,5 @@
 import AdminController from './Features/ServerAdmin/AdminController.js'
+import AdminPanelRouter from './Features/ServerAdmin/AdminPanelRouter.js'
 import ErrorController from './Features/Errors/ErrorController.js'
 import Features from './infrastructure/Features.js'
 import ProjectController from './Features/Project/ProjectController.js'
@@ -280,6 +281,7 @@ async function initialize(webRouter, privateApiRouter, publicApiRouter) {
   ContactRouter.apply(webRouter, privateApiRouter)
   AnalyticsRouter.apply(webRouter, privateApiRouter, publicApiRouter)
   LinkedFilesRouter.apply(webRouter, privateApiRouter, publicApiRouter)
+  AdminPanelRouter.apply(webRouter, privateApiRouter)
   TemplatesRouter.apply(webRouter)
   UserMembershipRouter.apply(webRouter)
   TokenAccessRouter.apply(webRouter)
