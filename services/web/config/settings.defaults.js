@@ -725,6 +725,7 @@ module.exports = {
     // them to disk here).
     dumpFolder: Path.resolve(__dirname, '../data/dumpFolder'),
     uploadFolder: Path.resolve(__dirname, '../data/uploads'),
+    templateFolder: '/var/lib/overleaf-template-storage',
   },
 
   // Automatic Snapshots

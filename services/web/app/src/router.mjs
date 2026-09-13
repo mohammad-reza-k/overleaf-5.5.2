@@ -55,6 +55,7 @@ import TokenAccessController from './Features/TokenAccess/TokenAccessController.
 import TokenAccessRouter from './Features/TokenAccess/TokenAccessRouter.mjs'
 import LinkedFilesRouter from './Features/LinkedFiles/LinkedFilesRouter.mjs'
 import TemplatesRouter from './Features/Templates/TemplatesRouter.js'
+import TemplateGalleryRouter from './Features/TemplateGallery/TemplatesRouter.js'
 import UserMembershipRouter from './Features/UserMembership/UserMembershipRouter.mjs'
 import SystemMessageController from './Features/SystemMessages/SystemMessageController.js'
 import AnalyticsRegistrationSourceMiddleware from './Features/Analytics/AnalyticsRegistrationSourceMiddleware.js'
@@ -282,6 +283,7 @@ async function initialize(webRouter, privateApiRouter, publicApiRouter) {
   AnalyticsRouter.apply(webRouter, privateApiRouter, publicApiRouter)
   LinkedFilesRouter.apply(webRouter, privateApiRouter, publicApiRouter)
   AdminPanelRouter.apply(webRouter, privateApiRouter)
+  TemplateGalleryRouter.apply(webRouter)
   TemplatesRouter.apply(webRouter)
   UserMembershipRouter.apply(webRouter)
   TokenAccessRouter.apply(webRouter)
