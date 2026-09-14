@@ -416,7 +416,7 @@ const AdminPanelController = {
     async toggleUserSuspension(req, res, next) {
         try {
             const { email, id } = req.params;
-            const { suspend } = req.body;
+            // const { suspend } = req.body;
 
             let query = {};
             if (email) {
@@ -446,7 +446,8 @@ const AdminPanelController = {
                 });
             }
 
-            user.suspended = suspend === true;
+            // user.suspended = suspend === true;
+            user.suspended = !user.suspended;
             await user.save();
 
             logger.info(
