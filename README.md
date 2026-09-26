@@ -17,7 +17,7 @@ Features Added:
 . Organize templates into categories
 
 path to the files added:
-. template gallery containing zip files of the resource of the templates => overleaf/services/web/app/template-gallery
+. template gallery containing zip files of the resource of the templates must be installed on server locally.
 . template stored metadata => overleaf/services/web/app/src/models/TemplateGallery.js
 . template api => overleaf/services/web/app/src/Features/TemplateGallery
 . admin panel api => overleaf/services/web/app/Features/ServerAdmin
